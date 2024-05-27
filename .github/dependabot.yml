@@ -1,14 +1,7 @@
+# For more details, see https://containers.dev/guide/dependabot
 version: 2
-enable-beta-ecosystems: true
-
 updates:
-    - package-ecosystem: "github-actions"
-      directory: "/"
-      schedule:
-          interval: "daily"
-
-    - package-ecosystem: "cargo"
-      directory: "/"
-      schedule:
-          interval: "daily"
-      versioning-strategy: lockfile-only
+  - package-ecosystem: "devcontainers"
+    directory: "/"
+    schedule:
+      interval: weekly
